@@ -1,0 +1,226 @@
+body{
+    background: #F6F6F6;
+    border-top: 8px solid #6CC6C4;
+    margin: 0 auto;
+    width: 930px;
+    display: grid;
+    grid-template: 
+                "header header" 
+                "nav main     "
+                "footer footer"
+                /270px 1fr;
+}
+/* =========================
+          header
+========================= */
+
+header{
+   grid-area: header;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.image{
+    margin-top: 45px;
+}
+.description{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 10px;
+}
+.tele{
+    margin: 10px 0px;
+    font-size: 25px;
+}
+.time{
+    margin: 0;
+    padding: 7px 12px;
+    font-size: 10px;
+    border: 1px solid #D6D6D6;
+    text-align: center;
+}
+.dayoff{
+    color: red;
+}
+.nav-first{
+    margin-top: 15px;
+}
+.nav-first ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.nav-first li{
+    display: block;
+    list-style: none;
+    text-align: center;
+    border: solid 1px #6CC6C4;
+    background:linear-gradient(rgb(156,227,225), rgb(108,198,196)) ;
+    border-radius:6px;
+    width: 20%;
+    padding: 10px 0px;
+}
+.nav-first li:hover{
+    opacity: 0.8;
+}
+.nav-first a{
+    display: block;
+    width: 182px;
+    text-decoration: none;
+    text-align: center;
+}
+.titleJp{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.titleEn{
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+/* =========================
+          nav
+========================= */
+
+.nav-second{
+    grid-area: nav;
+}
+.nav-second nav{
+    margin: 18px 0px;
+}
+.nav-second ul{
+    border: 1px solid;
+    border-image: linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    border-image-slice: 1;
+    margin: 0;
+    background-color: white;
+    padding-bottom: 15px;
+}
+.nav-second p{
+    background: linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+.option{
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    border-image-slice: 1;
+    margin-right: 10px;
+}
+    
+.option a{
+    color: #595959;
+    font-size: 90%;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    
+}
+.option a:hover{
+    color: rgb(132, 212, 210);
+    background: -webkit-linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+          main
+========================= */
+
+main{
+    grid-area: main;
+}
+.main-image{
+    margin: 18px 0 0 20px;
+}
+.information{
+    background-color: white;
+    margin-left: 20px;
+    padding: 0 20px 35px 20px;
+    border-radius: 0 0 6px 6px;
+}
+.information h2{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    border-image-slice: 1;
+    padding: 30px 0 10px 0;
+    font-size: 16px;
+    color: #515151;
+}
+.info{
+    display: flex;
+    margin: 10px 0;
+    padding: 3px 0;
+    border-bottom: 1px dotted #CCCCCC;
+}
+.date{
+    font-weight: bold;
+    font-size: 13px;
+    width: 150px;
+    color: #515151;
+}
+.explanation{
+    font-size: 12px;
+    display: inline-block;
+    width: 450px;
+}
+.explanation p{
+    margin: 0;
+}
+
+/* =========================
+          footer
+========================= */
+
+footer{
+    grid-area: footer;
+}
+.nav-third{
+    padding-top: 15px;
+} 
+.nav-third ul{
+    margin: 0;
+    display: flex;
+    padding: 0;
+    background: #6CC6C4;
+    border-radius: 6px;
+}
+.nav-third li{
+    display: block;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.nav-third a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: small;
+}
+.nav-third a:hover{
+    text-decoration: underline;
+}
+address{
+    text-align: right;
+    padding: 12px 0;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(rgb(156,227,225), rgb(108,198,196));
+    border-image-slice: 1;
+    font-size: small;
+}
+strong{
+    color: #515151;
+}
+.copyright{
+    text-align: center;
+    font-size: small;
+    color: #515151;
+}
